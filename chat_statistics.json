@@ -1,0 +1,73 @@
+{
+  "zeitraum": {
+    "erster_tag": "23.08.2020",
+    "letzter_tag": "12.02.2026",
+    "tage_gesamt": 1999,
+    "jahre": 5.5
+  },
+  "nachrichten": {
+    "gesamt": 54328,
+    "patrick": 27429,
+    "julia": 26899,
+    "durchschnitt_pro_tag": 27.2
+  },
+  "worte": {
+    "gesamt": 339212,
+    "durchschnitt_pro_nachricht": 6.2
+  },
+  "emojis": {
+    "lach_emoji_😂": 4967,
+    "herz_emojis_❤️💕": 77403,
+    "top_10": [
+      {
+        "emoji": "♥",
+        "anzahl": 52372
+      },
+      {
+        "emoji": "❤",
+        "anzahl": 11304
+      },
+      {
+        "emoji": "😂",
+        "anzahl": 4235
+      },
+      {
+        "emoji": "🙈",
+        "anzahl": 1834
+      },
+      {
+        "emoji": "😅",
+        "anzahl": 345
+      },
+      {
+        "emoji": "😍",
+        "anzahl": 207
+      },
+      {
+        "emoji": "🙄",
+        "anzahl": 188
+      },
+      {
+        "emoji": "🏼",
+        "anzahl": 96
+      },
+      {
+        "emoji": "☺",
+        "anzahl": 89
+      },
+      {
+        "emoji": "😳",
+        "anzahl": 84
+      }
+    ]
+  },
+  "liebesausdruecke": {
+    "ich_liebe_dich": 422,
+    "umarmungen_geschaetzt": 5397
+  },
+  "highlights": {
+    "laecheln_gebracht": "∞",
+    "gemeinsame_abenteuer": 67,
+    "glueckliche_momente": 19990
+  }
+}

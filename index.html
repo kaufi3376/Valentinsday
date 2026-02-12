@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentinstag Wrapped 2026 💕</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Slide 1: Intro -->
+        <div class="slide active" data-slide="1">
+            <div class="content">
+                <div class="decorative-hearts">
+                    <span class="deco-heart">💕</span>
+                    <span class="deco-heart">💖</span>
+                    <span class="deco-heart">💗</span>
+                </div>
+                <h1 class="title">🌹 Valentinstag Wrapped 🌹</h1>
+                <h2 class="subtitle">2026</h2>
+                <p class="description">Eine Zusammenfassung unserer besonderen Momente</p>
+                <button class="next-btn" onclick="nextSlide()">Los geht's 💕</button>
+                <div class="decorative-roses">
+                    <span class="deco-rose">🌹</span>
+                    <span class="deco-rose">🌹</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 2: Gemeinsame Zeit -->
+        <div class="slide" data-slide="2">
+            <div class="content with-image">
+                <div class="stat-image">
+                    <img src="Bilder/Bild 1.jpeg" alt="Wir">
+                </div>
+                <div class="stat-number" id="days-together">0</div>
+                <h2>💕 Tage voller Liebe 💕</h2>
+                <p class="stat-description" id="days-description">Seit dem 23.08.2020 - Jeder Tag mit dir ist besonders</p>
+                <button class="next-btn" onclick="nextSlide()">Weiter</button>
+            </div>
+        </div>
+
+        <!-- Slide 3: Worte -->
+        <div class="slide" data-slide="3">
+            <div class="content with-image">
+                <div class="stat-image">
+                    <img src="Bilder/WhatsApp Image 2026-02-12 at 13.29.05 (1).jpeg" alt="Wir">
+                </div>
+                <div class="stat-number">339,212</div>
+                <h2>Worte ausgetauscht</h2>
+                <p class="stat-description">Jedes Wort ein Zeichen unserer Verbundenheit 💬</p>
+                <button class="next-btn" onclick="nextSlide()">Weiter</button>
+            </div>
+        </div>
+
+        <!-- Slide 4: Nachrichten -->
+        <div class="slide" data-slide="4">
+            <div class="content with-image">
+                <div class="stat-image">
+                    <img src="Bilder/WhatsApp Image 2026-02-12 at 13.30.00 (1).jpeg" alt="Wir">
+                </div>
+                <div class="stat-number">54,328</div>
+                <h2>Nachrichten geschrieben</h2>
+                <p class="stat-description">27 Nachrichten jeden Tag - Wir haben uns immer was zu sagen 💬</p>
+                <button class="next-btn" onclick="nextSlide()">Weiter</button>
+            </div>
+        </div>
+
+        <!-- Slide 5: Emojis -->
+        <div class="slide" data-slide="5">
+            <div class="content with-image">
+                <div class="stat-image">
+                    <img src="Bilder/WhatsApp Image 2026-02-12 at 13.44.37.jpeg" alt="Wir">
+                </div>
+                <h2>Unsere meistgenutzten Emojis</h2>
+                <ul class="moments-list">
+                    <li>
+                        <span class="moment-number emoji">❤️</span>
+                        <span class="moment-text">63,676 Herzen gesendet</span>
+                    </li>
+                    <li>
+                        <span class="moment-number emoji">😂</span>
+                        <span class="moment-text">4,967 Mal zusammen gelacht</span>
+                    </li>
+                    <li>
+                        <span class="moment-number emoji">🙈</span>
+                        <span class="moment-text">1,834 Mal schüchtern gewesen</span>
+                    </li>
+                </ul>
+                <button class="next-btn" onclick="nextSlide()">Weiter</button>
+            </div>
+        </div>
+
+        <!-- Slide 6: Ich Liebe Dich -->
+        <div class="slide" data-slide="6">
+            <div class="content with-image image-up">
+                <div class="stat-image">
+                    <img src="Bilder/WhatsApp Image 2026-02-12 at 13.50.14.jpeg" alt="Wir">
+                </div>
+                <div class="stat-number">422</div>
+                <h2>💖 "Ich liebe dich" gesagt 💖</h2>
+                <p class="stat-description">Aber das wird nie genug sein, um auszudrücken, was ich fühle 💝</p>
+                <button class="next-btn" onclick="nextSlide()">Weiter</button>
+            </div>
+        </div>
+
+        <!-- Slide 7: Nachrichten Balance -->
+        <div class="slide" data-slide="7">
+            <div class="content with-image image-up">
+                <div class="stat-image">
+                    <img src="Bilder/WhatsApp Image 2026-02-12 at 13.52.11.jpeg" alt="Wir">
+                </div>
+                <h2>Unsere Konversation</h2>
+                <div class="stats-comparison">
+                    <div class="stat-item">
+                        <div class="stat-label">Patrick</div>
+                        <div class="stat-value">27,429</div>
+                        <div class="stat-bar">
+                            <div class="stat-bar-fill" style="width: 50.5%"></div>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-label">Julia</div>
+                        <div class="stat-value">26,899</div>
+                        <div class="stat-bar">
+                            <div class="stat-bar-fill" style="width: 49.5%"></div>
+                        </div>
+                    </div>
+                </div>
+                <p class="stat-description">Perfekt ausgeglichen - wir haben uns immer was zu sagen! 💕</p>
+                <button class="next-btn" onclick="nextSlide()">Weiter</button>
+            </div>
+        </div>
+
+        <!-- Slide 8: Fun Facts -->
+        <div class="slide" data-slide="8">
+            <div class="content with-image image-up">
+                <div class="stat-image">
+                    <img src="Bilder/WhatsApp Image 2026-02-12 at 13.52.27.jpeg" alt="Wir">
+                </div>
+                <h2>Fun Facts</h2>
+                <ul class="moments-list">
+                    <li>
+                        <span class="moment-number emoji">📊</span>
+                        <span class="moment-text">27 Nachrichten pro Tag im Durchschnitt</span>
+                    </li>
+                    <li>
+                        <span class="moment-number emoji">✍️</span>
+                        <span class="moment-text">6 Worte pro Nachricht durchschnittlich</span>
+                    </li>
+                    <li>
+                        <span class="moment-number emoji">🤗</span>
+                        <span class="moment-text">~5,397 Umarmungen geschätzt</span>
+                    </li>
+                </ul>
+                <button class="next-btn" onclick="nextSlide()">Weiter</button>
+            </div>
+        </div>
+
+        <!-- Slide 9: Unsere Momente -->
+        <div class="slide" data-slide="9">
+            <div class="content photo-slide">
+                <h2>Unsere schönsten Momente 📸</h2>
+                <div class="photo-gallery">
+                    <div class="photo-container">
+                        <img id="currentPhoto" src="Bilder/Bild 1.jpeg" alt="Unsere Momente">
+                    </div>
+                    <div class="photo-navigation">
+                        <button class="photo-btn" onclick="previousPhoto()">❮</button>
+                        <span class="photo-counter" id="photoCounter">1 / 13</span>
+                        <button class="photo-btn" onclick="nextPhoto()">❯</button>
+                    </div>
+                </div>
+                <button class="next-btn" onclick="nextSlide()">Weiter</button>
+            </div>
+        </div>
+
+        <!-- Slide 10: Unsere Abenteuer -->
+        <div class="slide" data-slide="10">
+            <div class="content map-slide">
+                <h2>Unsere Abenteuer 🌍</h2>
+                <div id="map"></div>
+                <button class="next-btn" onclick="nextSlide()">Weiter</button>
+            </div>
+        </div>
+
+        <!-- Slide 11: Danke -->
+        <div class="slide" data-slide="11">
+            <div class="content finale">
+                <div class="decorative-hearts">
+                    <span class="deco-heart">💕</span>
+                    <span class="deco-heart">💖</span>
+                    <span class="deco-heart">💗</span>
+                    <span class="deco-heart">💝</span>
+                </div>
+                <h1 class="finale-title">🌹 Danke 🌹</h1>
+                <p class="finale-text">Dass du mein Valentinsschatz bist,<br>
+                heute und jeden Tag ❤️💕💖</p>
+                <p class="finale-subtitle">💗 Ich liebe dich! 💗</p>
+                <div class="decorative-roses">
+                    <span class="deco-rose">🌹</span>
+                    <span class="deco-rose">🌹</span>
+                    <span class="deco-rose">🌹</span>
+                </div>
+                <button class="next-btn" onclick="nextSlide()">Weiter</button>
+            </div>
+        </div>
+
+        <!-- Slide 12: Die Frage -->
+        <div class="slide" data-slide="12">
+            <div class="content question-slide">
+                <div class="decorative-hearts big-hearts">
+                    <span class="deco-heart">💕</span>
+                    <span class="deco-heart">💖</span>
+                    <span class="deco-heart">💗</span>
+                    <span class="deco-heart">💝</span>
+                    <span class="deco-heart">💞</span>
+                </div>
+                <h1 class="question-title">💕 Willst du mein<br>Valentinsschatz sein? 💕</h1>
+                <div class="button-container">
+                    <button class="yes-btn" id="yesBtn" onclick="handleYes()">JA 💕</button>
+                    <button class="no-btn" id="noBtn" onclick="handleNo()">NEIN</button>
+                </div>
+                <div class="decorative-roses">
+                    <span class="deco-rose">🌹</span>
+                    <span class="deco-rose">🌹</span>
+                    <span class="deco-rose">🌹</span>
+                    <span class="deco-rose">🌹</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 13: Passwort für nächstes Abenteuer -->
+        <div class="slide" data-slide="13">
+            <div class="content password-slide">
+                <div class="decorative-hearts">
+                    <span class="deco-heart">💝</span>
+                    <span class="deco-heart">💖</span>
+                    <span class="deco-heart">💝</span>
+                </div>
+                <h1 class="finale-title">🌹 Das ist unser nächstes Abenteuer 🌹</h1>
+                <p class="stat-description">Gib das Passwort ein, um die Überraschung zu entdecken: 💕</p>
+                <div class="password-container">
+                    <input type="password" id="passwordInput" placeholder="Passwort eingeben" class="password-input">
+                    <button class="password-btn" onclick="checkPassword()">Öffnen</button>
+                </div>
+                <p id="passwordError" class="password-error">Falsches Passwort! Versuch es nochmal 😉</p>
+            </div>
+        </div>
+
+        <!-- Progress Dots -->
+        <div class="progress-dots">
+            <span class="dot active" data-dot="1"></span>
+            <span class="dot" data-dot="2"></span>
+            <span class="dot" data-dot="3"></span>
+            <span class="dot" data-dot="4"></span>
+            <span class="dot" data-dot="5"></span>
+            <span class="dot" data-dot="6"></span>
+            <span class="dot" data-dot="7"></span>
+            <span class="dot" data-dot="8"></span>
+            <span class="dot" data-dot="9"></span>
+            <span class="dot" data-dot="10"></span>
+            <span class="dot" data-dot="11"></span>
+            <span class="dot" data-dot="12"></span>
+            <span class="dot" data-dot="13"></span>
+        </div>
+    </div>
+
+    <!-- Floating Hearts Animation -->
+    <div class="hearts-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
